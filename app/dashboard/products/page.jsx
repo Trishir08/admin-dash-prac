@@ -13,8 +13,6 @@ const ProductsPage = async ({searchParams}) => {
   const q = searchParams?.q || ""
   const page = searchParams?.page || 1
   const {count , products} = await fetchProducts(q,page) ; 
-  console.log("hi" , users);
-
 
   return (
     <div className={styles.container}>
